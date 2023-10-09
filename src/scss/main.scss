@@ -4,9 +4,12 @@
 @import "_fonts.scss";
 
 
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  padding-right: 75px;
+  padding-left: 75px;
 }
 .main {
   flex: 1 1 auto;
@@ -21,7 +24,7 @@
 }
 
 .logo {
-  padding: 16px 75px;
+  padding: 16px 0px;
 }
 
 .menu {
@@ -34,9 +37,9 @@
   &__list-link {
     color: $primary-color;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 600; 
     line-height: 125%;
+    font-family: $proxima-fm-600, sans-serif;
+    font-weight: 600;
     cursor: pointer;
   }
 
@@ -47,13 +50,10 @@
   //   width: 1px;
   //   opacity: 0.1;
   // }  
-
- 
 }
 
 .social__media {
   gap: 40px;
-  padding-right: 75px;
 }
 
 .media {
@@ -65,9 +65,9 @@
 
 .schedule__time {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 125%;
+  font-family: $proxima-fm-400, sans-serif;
 }
 
 .contact__us {
@@ -75,8 +75,74 @@
   cursor: pointer;
   &-number{
     font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+    font-family: $proxima-fm-700, sans-serif;
+  }
+}
+
+.first__section {
+  position: relative;
+}
+
+.join__us {
+  margin-top: 100px;
+
+  &-description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    font-family: $proxima-fm-600, sans-serif;
+  }
+
+  &-description:nth-child(3) {
+    margin-top: 20px;
+    width: 960px;
+  }
+
+  &-header{
+    width: 1063px;
+    font-size: 90px;
+    line-height: 110%;
+    font-family: $proxima-fm-900, sans-serif;
+    font-weight: 900;
+  }
+
+  &-btn {
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 20px 82px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
+    font-family: $proxima-fm-700, sans-serif;
+    background-color: $secondary-color;
+    cursor: pointer;
+  }
+
+  &-img-dev-bg{
+    position: absolute; 
+    width: auto;
+    top: -79px;
+    transform: translateX(-16%);
+    z-index: -1;
+  }
+
+  &-img-dev{
+    position: absolute;
+    z-index: 2222;
+    top: 91px;
+  }
+}
+
+.nav__slider {
+  margin-top: 211px;
+
+  &-list{
+    gap: 17px;
   }
 }
