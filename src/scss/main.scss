@@ -4,4 +4,79 @@
 @import "_fonts.scss";
 
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main {
+  flex: 1 1 auto;
+}
 
+.wrapper {
+  min-height: 100%;
+}
+
+.header {
+  background-color: $bg-slider;
+}
+
+.logo {
+  padding: 16px 75px;
+}
+
+.menu {
+  padding:  39.5px 0px;
+  
+  &__list {
+    gap: 50px;
+  }
+
+  &__list-link {
+    color: $primary-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600; 
+    line-height: 125%;
+    cursor: pointer;
+  }
+
+  // &__list-item:nth-child(-n+4):after{
+  //   content: "|";
+  //   height: 20px;
+  //   display: inline-block;
+  //   width: 1px;
+  //   opacity: 0.1;
+  // }  
+
+ 
+}
+
+.social__media {
+  gap: 40px;
+  padding-right: 75px;
+}
+
+.media {
+
+  &__list {
+    gap: 12px;
+  }
+}
+
+.schedule__time {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.contact__us {
+  gap: 8px;
+  cursor: pointer;
+  &-number{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+  }
+}
